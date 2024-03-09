@@ -5,7 +5,8 @@ const mongoose = require("mongoose");
 
 const {
     MONGO_URI,
-    GUILD_ID
+    GUILD_ID,
+    TOKEN_BOT
 } = process.env;
 
 // Conecta no banco do mongo na nuvem
@@ -36,7 +37,7 @@ const client = new Client({
 });
 
 const prefix = "!uai";
-const token = "MTIxMzgxNjQ0MTAyMzc2NjU0OA.GvC351._Liem8xP4PxGQJnQYceBcyHvYfXIkZWGSc-SLY";
+const token = TOKEN_BOT;
 const canaisRegistados = ['1212482170585874444']; 
 
 // Evento de inicialização do bot
